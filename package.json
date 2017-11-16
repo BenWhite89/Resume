@@ -1,0 +1,25 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my personal resume and portfolio site",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BenWhite89/resume.git"
+  },
+  "keywords": [
+    "ben",
+    "white",
+    "resume",
+    "portfolio"
+  ],
+  "author": "benjamin white",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenWhite89/resume/issues"
+  },
+  "homepage": "https://github.com/BenWhite89/resume#readme"
+}

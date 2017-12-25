@@ -13,6 +13,9 @@ angular.module('myResume', ['ngRoute', 'ngResource', 'myResume.controllers', 'my
             .when('/personal', {
                 templateUrl: '/views/personal.html'
             })
+            .when('/welcome', {
+                templateUrl: '/views/welcome.html'
+            })
             .otherwise({
                 redirectTo: '/'
             })

@@ -109,7 +109,7 @@ body {
     grid-column: 2/ span 1;
     grid-row: 3 / span 1;
     z-index: 7;
-    box-shadow: inset 6px 6px @grey3, inset -6px -6px@text-dark;
+    box-shadow: inset 6px 6px 12px @grey3, inset -6px -6px 12px@text-dark;
 }
 
 #vhs-logo {
@@ -177,11 +177,13 @@ nav {
 }
 
 #av {
-    width: 100px;
+    width: 80px;
     height: 40px;
     border-radius: 20px;
+    margin-top: 10px;
     border: 2px black solid;
     float: left;
+    box-shadow: inset 4px 4px 8px @text-dark, inset -4px -4px 8px @grey4;
 }
 
 #speaker {
@@ -198,7 +200,7 @@ nav {
 .plug {
     width: 10px;
     height: 10px;
-    margin: 6px;
+    margin: 9px;
     border-radius: 100%;
     border: 6px solid;
     float: left;
@@ -211,6 +213,48 @@ nav {
 
 .white {
     border-color: white;
+}
+
+#buttons {
+    background: @grey4;
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    top: 15px;
+    border: 2px solid @text-dark;
+    float: left;
+    height: 30px;
+    width: 50px;
+    box-shadow: inset 0px 4px 4px @grey3, inset 0px -4px 4px @text-dark;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.active {
+    box-shadow: inset 0px 4px 4px @text-dark, inset 0px -4px 4px @grey3;
+}
+
+#back {
+    left: 150px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-image: url('../images/rewind.png');
+}
+
+#play {
+    left: 200px;
+    background-image: url('../images/play.png');
+}
+
+#forward {
+    left: 250px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-image: url('../images/forward.png')
 }
 
 .page {

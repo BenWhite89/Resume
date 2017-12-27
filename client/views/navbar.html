@@ -3,5 +3,10 @@
         <div class="plug yellow"></div>
         <div class="plug white"></div>
     </div>
+    <div id="buttons">
+        <div class="button" id="back" ng-mousedown="activeToggle('rewind')" ng-mouseup="activeToggle('rewind')" ng-class="{'active': rewind}"></div>
+        <div class="button" id="play" ng-mousedown="activeToggle('play')" ng-mouseup="activeToggle('play')" ng-class="{'active': play}"></div>
+        <div class="button" id="forward" ng-mousedown="activeToggle('forward')" ng-mouseup="activeToggle('forward')" ng-class="{'active': forward}"></div>
+    </div>
     <div id="speaker"></div>
 </div>

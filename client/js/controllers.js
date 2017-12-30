@@ -12,8 +12,12 @@ angular.module('myResume.controllers', ['ngRoute', 'ngResource'])
         $rootScope.rewind = false;
         $rootScope.play = false;
         $rootScope.forward = false;
+        $rootScope.eject = false;
+        $rootScope.power = false;
 
         $rootScope.activeToggle = function(id) {
             $rootScope[id] = $rootScope[id] === false ? true : false;
         }
+
+
     }])

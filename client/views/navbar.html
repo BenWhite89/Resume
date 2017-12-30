@@ -7,6 +7,8 @@
         <div class="button" id="back" ng-mousedown="activeToggle('rewind')" ng-mouseup="activeToggle('rewind')" ng-class="{'active': rewind}"></div>
         <div class="button" id="play" ng-mousedown="activeToggle('play')" ng-mouseup="activeToggle('play')" ng-class="{'active': play}"></div>
         <div class="button" id="forward" ng-mousedown="activeToggle('forward')" ng-mouseup="activeToggle('forward')" ng-class="{'active': forward}"></div>
+        <div class="button" id="eject"ng-mousedown="activeToggle('eject')" ng-mouseup="activeToggle('eject')" ng-class="{'active': eject}"></div>
+        <div class="button" id="power" ng-click="power()" ng-mousedown="activeToggle('power')" ng-mouseup="activeToggle('power')" ng-class="{'active': power}"></div>
     </div>
     <div id="speaker"></div>
 </div>

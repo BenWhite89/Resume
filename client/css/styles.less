@@ -30,8 +30,34 @@ body {
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
+h3 {
+    margin: 1em 0;
+}
+
+.head {
+    margin: .5em 0;
+}
+
 ul {
     list-style: none;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.skills {
+    float: left;
+    width: 150px;
+}
+
+.skills>li {
+    margin-bottom: .3em;
+}
+
+.list>li {
+    padding-bottom: 1em;
 }
 
 #lamp {
@@ -409,31 +435,31 @@ nav {
     height: 0;
     border-style: solid;
     border-width: 40px 0 40px 69.3px;
-    border-color: transparent transparent transparent #729dd8;
+    border-color: transparent transparent transparent #764cc5;
 }
 
 .back-color-1 {
-    filter: hue-rotate(0deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(0deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .back-color-2  {
-    filter: hue-rotate(60deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(60deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .back-color-3  {
-    filter: hue-rotate(120deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(120deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .back-color-4  {
-    filter: hue-rotate(180deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(180deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .back-color-5  {
-    filter: hue-rotate(240deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(240deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .back-color-6  {
-    filter: hue-rotate(300deg) contrast(30%) blur(1px) saturate(240%);
+    filter: hue-rotate(300deg) contrast(20%) blur(1px) saturate(240%);
 }
 
 .textbox {
@@ -468,6 +494,12 @@ nav {
 
 @keyframes PowerLine {
     0% {
+        opacity: 0.0;
+        height: 0;
+        width: 0;
+        z-index: 0;
+    }
+    1% {
         opacity: 1.0;
         height: 0;
         width: 0;
@@ -487,6 +519,8 @@ nav {
     }
     100% {
         opacity: 0.0;
+        height: 0; 
+        width: 0;
         z-index: 0;
     }
 }

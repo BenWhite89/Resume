@@ -9,6 +9,7 @@ export default function check(req: any, res: any, next: any) {
     if (isAsset(req.url)) {
        return next();
     } else {
+        console.log(clientPath);
         res.sendFile(path.join(clientPath, 'index.html'));
     }
 };

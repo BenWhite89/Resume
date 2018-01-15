@@ -9,6 +9,7 @@ function check(req, res, next) {
         return next();
     }
     else {
+        console.log(clientPath);
         res.sendFile(path.join(clientPath, 'index.html'));
     }
 }

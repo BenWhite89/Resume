@@ -13,6 +13,7 @@ app.use(express.static(clientPath));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+console.log('hi', clientPath);
 app.get('*', check);
 app.use('/api', api);
 

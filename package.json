@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "my personal resume and portfolio site",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "source variables && npm run dev",
     "build:ts": "tsc -p .",
